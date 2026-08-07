@@ -1,0 +1,432 @@
+.emergency-box{
+    text-align:center;
+    margin:20px;
+}
+
+.emergency-btn{
+    background:#e60000;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0.7;
+    }
+}
+
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    z-index:9999;
+}
+
+.popup-content{
+    background:white;
+    width:350px;
+    margin:8% auto;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.call-btn{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.header-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    background:white;
+    padding:10px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.header-text{
+    text-align:center;
+    flex:1;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',Arial,sans-serif;
+}
+
+
+body{
+
+    background:linear-gradient(135deg,#e3f2fd,#f8ffff);
+    color:#333;
+
+}
+
+
+
+/* Header */
+
+header{
+
+    background:linear-gradient(135deg,#0077b6,#00b4d8);
+    color:white;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+}
+
+
+header h1{
+
+    font-size:38px;
+    letter-spacing:1px;
+
+}
+
+
+header p{
+
+    font-size:18px;
+    margin-top:10px;
+
+}
+
+
+
+/* Navigation */
+
+
+nav{
+
+    background:white;
+    padding:18px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+
+}
+
+
+nav button{
+
+    background:#0077b6;
+    color:white;
+    border:none;
+    padding:14px 25px;
+    margin:6px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+
+}
+
+
+nav button:hover{
+
+    background:#023e8a;
+    transform:translateY(-4px);
+
+}
+
+
+
+/* Main containers */
+
+.container{
+
+    width:90%;
+    margin:40px auto;
+    background:rgba(255,255,255,0.8);
+    backdrop-filter:blur(15px);
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+
+
+.hide{
+
+display:none;
+
+}
+
+
+
+/* Dashboard Cards */
+
+
+.cards{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:30px;
+
+}
+
+
+
+.cards div{
+
+background:linear-gradient(135deg,#caf0f8,#ffffff);
+width:250px;
+padding:30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 20px #ccc;
+transition:0.4s;
+
+}
+
+
+
+.cards div:hover{
+
+transform:translateY(-10px) scale(1.03);
+
+}
+
+
+.cards h3{
+
+color:#0077b6;
+
+}
+
+
+
+/* Inputs */
+
+
+input{
+
+width:70%;
+display:block;
+margin:15px auto;
+padding:15px;
+
+border:none;
+outline:none;
+
+border-radius:30px;
+
+background:#f1f9ff;
+
+box-shadow:inset 0 0 10px #ccc;
+
+font-size:16px;
+
+}
+
+
+
+/* Buttons */
+
+
+.container button{
+
+background:linear-gradient(135deg,#0096c7,#0077b6);
+
+color:white;
+
+border:none;
+
+padding:15px 35px;
+
+border-radius:30px;
+
+cursor:pointer;
+
+font-size:16px;
+
+transition:0.3s;
+
+}
+
+
+.container button:hover{
+
+transform:scale(1.08);
+
+}
+
+
+
+/* Table */
+
+
+table{
+
+width:100%;
+border-collapse:collapse;
+overflow:hidden;
+border-radius:15px;
+
+}
+
+
+
+th{
+
+background:#0077b6;
+color:white;
+padding:15px;
+
+}
+
+
+td{
+
+padding:12px;
+text-align:center;
+border-bottom:1px solid #ddd;
+
+}
+
+
+tr:hover{
+
+background:#e0f7ff;
+
+}
+
+
+
+/* Search Result */
+
+
+#searchResult{
+
+margin-top:25px;
+padding:25px;
+
+background:#e3f8ff;
+
+border-left:6px solid #0077b6;
+
+border-radius:15px;
+
+}
+
+
+
+/* AI Box */
+
+
+#aiResult{
+
+margin-top:25px;
+
+padding:20px;
+
+background:#d8f3dc;
+
+border-radius:20px;
+
+color:#006400;
+
+font-size:18px;
+
+animation:pulse 2s infinite;
+
+}
+
+
+
+@keyframes pulse{
+
+50%{
+
+box-shadow:0 0 25px #00b4d8;
+
+}
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:700px){
+
+
+header h1{
+
+font-size:25px;
+
+}
+
+
+input{
+
+width:90%;
+
+}
+
+
+.cards div{
+
+width:90%;
+
+}
+
+
+nav button{
+
+width:90%;
+
+}
+
+
+}
